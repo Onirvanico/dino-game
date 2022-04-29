@@ -1,0 +1,64 @@
+body {
+    background-color: maroon;
+}
+
+.background {
+    overflow: hidden;
+    position: absolute;
+    background-image: url('./images/background.png');
+    background-color: maroon;
+    border: solid black 2px;
+    width: 90%;
+    height: 90%;
+    bottom: 0;
+    animation: slideright 60s infinite linear;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    margin-left: 5%;
+    background-image: url('./images/dino.png');
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url('./images/cactus.png');
+}
+
+@keyframes slideright {
+    from {
+        background-position: 4000%;
+    } to {
+        background-position: 0;
+    }
+}
+
+.game-over {
+    color: lightslategrey;
+    size: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+#score {
+    font-size: 2em;
+    margin: 1rem;
+    float: right;
+}
+
+.image-lose {
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    height: 150%;
+    position: absolute;
+    background: url('./images/image-lose.jpeg');
+    background-repeat: no-repeat;
+}
